@@ -1,0 +1,579 @@
+ /* 头部 */
+ header {
+     height: 205px;
+     width: 100%;
+     margin: 0px auto;
+ }
+
+ .headerTop {
+     width: 100%;
+     background-color: #F5F5F5;
+     height: 28px;
+     font-family: Arial, Microsoft Yahei, Helvetica Neue, Helvetica, sans-serif;
+     font-size: 12px;
+     position: fixed;
+     top: 0px;
+     border: 1px solid #ccc5c2;
+     border-left: none;
+     border-right: none;
+     z-index: 2;
+ }
+
+ .navTop {
+     width: 1200px;
+     margin: 0px auto;
+     height: 28px;
+     line-height: 28px;
+ }
+
+ .navLeft {
+     height: 28px;
+     line-height: 28px;
+     display: inline-block;
+     float: left;
+ }
+
+ .navLeft li {
+     margin: 0px 5px;
+     float: left;
+ }
+
+ .navLeftLogin>a {
+     color: #57B6FD;
+
+ }
+
+ .navLeftEnroll>a {
+     color: #7F7F7F;
+ }
+
+ .navLeftEnroll>a:hover {
+     color: #57B6FD;
+ }
+
+ .navRight {
+     display: inline-block;
+     height: 28px;
+     line-height: 28px;
+     float: right;
+ }
+
+ .navRight>ul>li {
+     height: 28px;
+     line-height: 28px;
+     margin-left: 20px;
+     float: right;
+ }
+
+ .navRight>ul>li:nth-child(4) {
+     margin-left: 10px;
+ }
+
+ .navRightService>a {
+     color: #57B6FD;
+ }
+
+ .navRightCity>a {
+     margin: 0px auto;
+     color: #57B6FD;
+ }
+
+ .navRightService:hover em {
+     background-image: url('../img/xiala.png');
+     transform: rotate(180deg);
+ }
+
+ .navRightCity:hover em {
+     background-image: url('../img/xiala.png');
+     transform: rotate(180deg);
+ }
+
+ .navRightNormal {
+     color: #7F7F7F;
+ }
+
+ .navRightNormal>a {
+     color: #7F7F7F;
+ }
+
+ .navRightCityList span {
+     color: #57B6FD;
+     margin-right: 28px;
+ }
+
+ .navRightServiceList {
+     border: 1px solid #ccc5c2;
+     background-color: white;
+     border-top: none;
+     overflow: hidden;
+     height: 0px;
+     transition-duration: 1s;
+     padding: 0px;
+ }
+
+ .navRightServiceList a {
+     display: inline-block;
+     width: 48.344px;
+     height: 28px;
+     line-height: 28px;
+     color: #7F7F7F;
+     padding: 4.5px;
+ }
+
+ .navRightServiceList a:hover {
+     color: white;
+     background-color: #377FE2;
+ }
+
+ .navRightCityList {
+     border: 1px solid #ccc5c2;
+     display: none;
+     position: absolute;
+     background-color: white;
+     border-top: none;
+     padding: 10px;
+     width: 310.69px;
+ }
+
+ .navRightCityList a {
+     padding: 5px;
+     color: #7F7F7F;
+ }
+
+ .navRightCityList a:hover {
+     color: white;
+     background-color: #57B6FD;
+     border-radius: 10px;
+ }
+
+ .navRightService:hover>.navRightServiceList {
+     height: 111px;
+ }
+
+ .navRightCity:hover>.navRightCityList {
+     display: block;
+     animation: show;
+     animation-duration: 0.5s;
+ }
+
+ .headerMiddle {
+     width: 1200px;
+     height: 55px;
+     background-image: url('../img/indexTop.png');
+     margin: 0px auto;
+     position: relative;
+     top: 30px;
+ }
+
+ .headerBottom {
+     width: 1200px;
+     height: 120px;
+     margin: 0px auto;
+     display: flex;
+     background-color: white;
+     position: relative;
+     top: 30px
+ }
+
+ .logo {
+     display: block;
+     width: 180px;
+     height: 120px;
+ }
+
+ .logo>a {
+     display: block;
+     width: 180px;
+     height: 60px;
+     margin: 30px 0px;
+ }
+
+ .city {
+     display: inline-block;
+     width: 50px;
+     height: 20px;
+     line-height: 20px;
+     margin: 50px 0px;
+     color: #7F7F7F;
+     user-select: none;
+ }
+
+ .citySelectList {
+     border: 1px solid #ccc5c2;
+     display: none;
+     position: absolute;
+     background-color: white;
+     padding: 10px;
+     width: 310.69px;
+     z-index: 1;
+ }
+
+ .city:hover>.citySelectList {
+     display: block;
+     animation: show;
+     animation-duration: 0.5s;
+ }
+
+ .city>span {
+     cursor: pointer;
+     font-family: Microsoft YaHei, Arial, Hiragino Sans GB, Georgia, "serif";
+ }
+
+ .city:hover em {
+     background-image: url('../img/xiala.png');
+     transform: rotate(180deg);
+ }
+
+ .citySelectList li {
+     height: 28px;
+     line-height: 28px;
+ }
+
+ .citySelectList a {
+     padding: 5px;
+     color: #7F7F7F;
+ }
+
+ .citySelectList span {
+     color: #57B6FD;
+     margin-right: 28px;
+ }
+
+ .citySelectList a:hover {
+     color: white;
+     background-color: #57B6FD;
+     border-radius: 10px;
+ }
+
+ .search {
+     width: 720px;
+     height: 70px;
+     margin: 40px 0px 10px 50px;
+     font-size: 15px;
+ }
+
+ .search>input {
+     font-family: Microsoft YaHei, Arial, Hiragino Sans GB, Georgia, "serif";
+ }
+
+ .search>input:focus {
+     font-family: Microsoft YaHei, Arial, Hiragino Sans GB, Georgia, "serif";
+ }
+
+ .search>input {
+     width: 606px;
+     height: 36px;
+     border: 2px solid #377FE2;
+     padding-left: 10px;
+     outline: none;
+     float: left;
+ }
+
+ .searchButton {
+     width: 100px;
+     height: 40px;
+     line-height: 40px;
+     background-color: #377FE2;
+     border: none;
+     outline: none;
+     color: white;
+     font-family: Microsoft YaHei, Arial, Hiragino Sans GB, Georgia, "serif";
+     cursor: pointer;
+ }
+
+ .keyword>a {
+     font-family: Microsoft YaHei, Arial, Hiragino Sans GB, Georgia, "serif";
+     color: #7F7F7F;
+     margin-right: 5px;
+     font-size: 12px;
+ }
+
+ .keyword {
+     width: 720px;
+     height: 30px;
+     line-height: 30px;
+ }
+
+ .keyword>a:hover {
+     color: #57B6FD;
+ }
+
+ .phone {
+     width: 200px;
+     height: 40px;
+     text-align: center;
+     margin: auto;
+ }
+
+ .phone>img:nth-child(2) {
+     position: relative;
+     top: 4px;
+ }
+
+ /* 中部 */
+ section {
+     width: 1200px;
+     margin: 0px auto;
+     background-color: white;
+ }
+
+ .sectionTop {
+     height: 50px;
+     background-color: #F6F6F6;
+ }
+
+ .sectionTop>a {
+     float: left;
+     display: block;
+     width: 80px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 16px;
+     color: black;
+     font-weight: bold;
+     text-align: center;
+ }
+
+ .sectionTop>a:last-child {
+     color: #28B5FD;
+ }
+
+ .sectionTop>a:nth-child(2):hover,
+ .sectionTop>a:nth-child(3):hover {
+     color: #377FE2;
+ }
+
+ .courseIntroduce {
+     background-color: #28B5FD;
+     height: 50px;
+     line-height: 50px;
+     font-size: 16px;
+     color: white;
+     font-weight: bold;
+ }
+
+ .courseIntroduce>span {
+     float: left;
+     margin: 0px 20px;
+ }
+
+ .courseImg {
+     position: relative;
+     height: 300px;
+ }
+
+ .courseImg>img {
+     position: absolute;
+     top: 50px;
+     left: 130px;
+ }
+
+ .courseImg>div {
+     position: absolute;
+     left: 400px;
+     width: 800px;
+     height: 300px;
+ }
+
+ .courseImg>div>p {
+     font-size: 15px;
+     color: #7F7F7F;
+     margin: 20px 0px;
+ }
+
+ .courseImg span {
+     margin-right: 20px;
+     color: black;
+ }
+
+ .courseList {
+     background-color: #28B5FD;
+     height: 50px;
+     line-height: 50px;
+     font-size: 16px;
+     color: white;
+     font-weight: bold;
+ }
+
+ .courseList>span {
+     float: left;
+     color: white;
+     margin: 0px 20px;
+ }
+
+ .courseList>span:first-child {
+     color: #377FE2;
+ }
+
+ .courseList>span:hover {
+     cursor: pointer;
+     color: #377FE2;
+ }
+
+ .courseDetails {
+     width: 1200px;
+     height: 300px;
+     overflow: hidden;
+ }
+
+ .courseDetails>p {
+     font-size: 15px;
+     color: #7F7F7F;
+     margin: 20px 0px;
+     margin-left: 20px;
+ }
+
+ .courseDetails span {
+     margin-right: 20px;
+     color: black;
+ }
+
+ .courseComment {
+     background-color: #28B5FD;
+     height: 50px;
+     line-height: 50px;
+     font-size: 16px;
+     color: white;
+     font-weight: bold;
+ }
+
+ .courseComment>span {
+     margin: 0px 20px;
+ }
+
+ .courseCommentList {
+     height: 50px;
+     line-height: 50px;
+     font-size: 16px;
+     color: #5E5E5E;
+     background-color: #F1D093;
+     border-radius: 5px;
+     margin: 10px 0px;
+ }
+
+ .courseCommentList>span {
+     margin: 0px 20px;
+     cursor: pointer;
+ }
+
+ .courseCommentList>span:last-child {
+     display: inline-block;
+     width: 80px;
+     height: 30px;
+     line-height: 30px;
+     float: right;
+     background-color: #FFCA00;
+     color: white;
+     border-radius: 5px;
+     text-align: center;
+     margin: 10px 20px;
+     font-weight: bold;
+ }
+
+ .courseCommentContent {
+     height: 500px;
+     position: relative;
+ }
+
+ .courseCommentContent>img {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .courseCommentContent>p {
+     position: absolute;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 24px;
+     color: #5E5E5E;
+ }
+
+ /* 底部 */
+
+ footer {
+     width: 1200px;
+     height: 300px;
+     margin: 0px auto;
+     background-color: rgba(240, 199, 122, 0.8);
+     position: relative;
+     font-family: Arial, Microsoft Yahei, Helvetica Neue, Helvetica, sans-serif;
+ }
+
+ .footerLeft {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     top: 25px;
+     margin: 30px;
+ }
+
+ .footerLeft>p {
+     margin: 20px 0px;
+     color: white;
+     font-size: 15px;
+ }
+
+ .footerMiddle {
+     width: 700px;
+     height: 200px;
+     position: absolute;
+     top: 25px;
+     left: 250px;
+     color: #7F7F7F;
+     font-size: 15px;
+     margin: 30px;
+ }
+
+ .footerMiddle>a {
+     color: white;
+ }
+
+ .footerMiddle>hr {
+     margin: 5px 0px;
+ }
+
+ .footerMiddleContent {
+     width: 100px;
+     height: 150px;
+     float: left;
+     margin: 0px 37.5px;
+     text-align: center;
+ }
+
+ .footerMiddleContent>p {
+     margin: 10px 0px;
+ }
+
+ .footerMiddleContent a {
+     color: white;
+ }
+
+ .footerRight {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     top: 25px;
+     left: 1000px;
+     margin-top: 30px;
+     margin-right: 30px;
+     font-size: 15px;
+     color: white;
+     text-align: center;
+ }
+
+ .footerBottom {
+     width: 1200px;
+     height: 30px;
+     position: absolute;
+     top: 250px;
+     line-height: 30px;
+     text-align: center;
+ }
+
+ .footerBottom>a {
+     font-size: 15px;
+     color: white;
+ }

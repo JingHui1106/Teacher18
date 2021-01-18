@@ -1,0 +1,226 @@
+/* CSS Reset 代码 */
+/* 
+    blockquote: 定义长引用  
+    body: 定义页面主体,所有可见内容都定义在该元素里面
+    button: 定义按钮,通过type属性可以定义提交按钮(submit)、重置按钮(reset)、普通按钮(button)
+    dl: 定义自定义列表
+    dt: 定义自定义列表标题
+    dd: 定义自定义列表项内容
+        一个dl下面可以有多个dt和dd,一个dt可以对应多个dd
+    fieldset: 给表单元素进行分组
+    legend: 给表单分组定义标题
+    form: 用来定义表单,有两个必须属性
+        action  表单数据提交给服务器的地址
+        method  表单提交方式
+            get: 请求数据会显示在地址栏,不安全;请求内容长度有限制;请求速度快
+            post: 请求数据不会显示在地址栏,安全;请求内容长度无限制;请求速度慢
+    h1~h6: 标题标签
+    hr: 水平线标签
+    input: 输入框标签;文本框、密码框、单选按钮、复选按钮、提交按钮、重置按钮、图像提交按钮、文件上传框、隐藏文本框等;
+    ol: 有序列表
+    ul: 无序列表
+    li: 列表项
+    p: 段落
+    pre: 预定义标签
+    td: 单元格
+    textarea: 文本域
+    th: 表头,列标题
+*/
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    /* 外边距为0 */
+    margin: 0;
+    /* 内边距为0 */
+    padding: 0
+}
+
+/* select: 下拉框 */
+body,
+button,
+input,
+select,
+textarea {
+    /* font-size 设置文本字体大小   line-height  设置行高 */
+    /* font:12px/1.5   文字大小是12px,行高是1.5em */
+    /* tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif  字体系列 */
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-family: Microsoft YaHei, Arial, Hiragino Sans GB, Georgia, "serif";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 字体大小为100% */
+    font-size: 100%
+}
+
+/* 
+    address: 地址(联系方式)
+    cite: 作品引用
+    dfn: 定义专业术语
+    em: 定义强调文本
+    var: 定义变量
+*/
+address,
+cite,
+dfn,
+em,
+var {
+    /* 字体样式: 正常字体 */
+    font-style: normal
+}
+
+/* 
+    code: 代码 
+    kbd: 键盘码
+    pre: 预定义标签
+    samp: 定义示范文本
+*/
+code,
+kbd,
+pre,
+samp {
+    /* font-family  定义字体系列 */
+    font-family: courier new, courier, monospace
+}
+
+/* 
+    small: 定义小号字体
+*/
+small {
+    font-size: 12px
+}
+
+ol,
+ul {
+    /* 设置无列表项符号 */
+    list-style: none
+}
+
+/* a: 超链接标签 */
+a {
+    /* 超链接无修饰符,无下划线 */
+    text-decoration: none
+}
+
+/* 
+    超链接鼠标悬浮
+*/
+a:hover {
+    /* 鼠标移入,带下划线 */
+    text-decoration: underline
+}
+
+/* 
+    sup: 上标
+*/
+sup {
+    /* 内容的垂直对齐方式: 文字的顶部 */
+    vertical-align: text-top
+}
+
+/* 
+    sub: 下标
+*/
+sub {
+    /* 内容的垂直对齐方式: 文字的底部 */
+    vertical-align: text-bottom
+}
+
+legend {
+    /* 设置文字颜色 */
+    color: #000
+}
+
+/* img: 图片标签 */
+fieldset,
+img {
+    /* 边框为0 */
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+button {
+    /* 边框无圆角 */
+    border-radius: 0
+}
+
+/* table: 表格标签 */
+table {
+    /* 边框合并 */
+    border-collapse: collapse;
+    /* 边框之间的距离为0 */
+    border-spacing: 0
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    user-select: none;
+    background-color: #F6F6F6;
+}
+
+em {
+    display: inline-block;
+    background-image: url('../img/xiala.png');
+    transition-property: transform;
+    transition-duration: 0.5s;
+    width: 5px;
+    height: 5px;
+    margin: 1px 0px;
+    margin-left: 3px;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rise {
+    0% {
+        margin-top: 20px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
